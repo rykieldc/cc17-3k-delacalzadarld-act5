@@ -7,8 +7,8 @@
     <string name="mona_lisa">Mona Lisa</string>
     <string name="artist_leonardo_da_vinci">Artist: Leonardo da Vinci</string>
     <string name="year_1503_1506">Year: 1503–1506\nMedium: Oil on poplar panel</string>
-    <string name="next">NEXT ></string>
-    <string name="previous">&#60; PREVIOUS</string>
+    <string name="next">NEXT</string>
+    <string name="previous">PREVIOUS</string>
     <string name="back">Navigate back to the previous screen</string>
     <string name="home">Home</string>
 
