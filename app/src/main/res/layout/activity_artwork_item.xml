@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFF4"
+    tools:context=".ArtworkItemActivity">
+
+    <!--  Home Button  -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/left_arrow"
+            android:contentDescription="@string/back"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:fontFamily="@font/poppins_bold"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textColor="#28282B"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+
+    <!-- Header Title -->
+    <TextView
+        android:id="@+id/artist_header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_black"
+        android:gravity="center"
+        android:text="@string/artist_header_title"
+        android:textAllCaps="true"
+        android:textColor="#28282B"
+        android:textSize="25sp" />
+
+    <!-- Artwork -->
+    <FrameLayout
+        android:id="@+id/image_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artist_header_title"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/img_frame"
+        android:padding="10dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dv_mona_lisa"
+            android:contentDescription="@string/mona_lisa_painting"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:maxWidth="250dp"
+            android:maxHeight="350dp" />
+
+    </FrameLayout>
+
+    <!-- Artwork Information -->
+    <LinearLayout
+        android:id="@+id/info_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_frame"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/info_card_bg"
+        android:elevation="4dp">
+
+    <!-- Artwork Title -->
+    <TextView
+        android:id="@+id/artwork_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mona_lisa"
+        android:fontFamily="@font/poppins_black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:gravity="center"/>
+
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/artist_leonardo_da_vinci"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:textColor="#555"
+        android:gravity="center"/>
+
+    <!-- Year and Medium -->
+        <TextView
+            android:id="@+id/artwork_year_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/year_1503_1506"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#616161"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- Buttons for navigating artworks -->
+    <LinearLayout
+        android:id="@+id/navigation_buttons"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="760dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Previous Button -->
+        <Button
+            android:id="@+id/button_previous"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="150dp"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="12dp"
+            android:text="@string/previous"
+            android:textColor="@color/button_color_selector"
+            android:textSize="15sp"
+            tools:ignore="VisualLintBounds"/>
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/button_next"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="12dp"
+            android:text="@string/next"
+            android:textColor="@color/button_color_selector"
+            android:textSize="15sp"
+            tools:ignore="VisualLintBounds" />
+    </LinearLayout>
+
+</RelativeLayout>

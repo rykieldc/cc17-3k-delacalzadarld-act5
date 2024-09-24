@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Art Space</string>
+    <string name="header_title">Featured Artists</string>
+    <string name="da_vinci">Leonardo Da Vinci</string>
+    <string name="artist_header_title">Leonardo da Vinci\'s Artworks</string>
+    <string name="mona_lisa_painting">Mona Lisa Painting</string>
+    <string name="mona_lisa">Mona Lisa</string>
+    <string name="artist_leonardo_da_vinci">Artist: Leonardo da Vinci</string>
+    <string name="year_1503_1506">Year: 1503–1506\nMedium: Oil on poplar panel</string>
+    <string name="next">NEXT ></string>
+    <string name="previous">&#60; PREVIOUS</string>
+    <string name="back">Navigate back to the previous screen</string>
+    <string name="home">Home</string>
+
+</resources>
